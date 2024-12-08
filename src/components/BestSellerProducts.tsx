@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const BestSellerProducts = () => {
     return (
@@ -12,7 +13,7 @@ const BestSellerProducts = () => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 px-32">
                 {/* Product 1 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic1.jpg"
                         alt="Product 1"
                         className="w-[250px] h-[350px]"
@@ -33,7 +34,7 @@ const BestSellerProducts = () => {
 
                 {/* Product 2 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic2.jpg"
                         alt="Product 2"
                         className="w-[250px] h-[350px]"
@@ -54,7 +55,7 @@ const BestSellerProducts = () => {
 
                 {/* Product 3 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic3.jpg"
                         alt="Product 3"
                         className="w-[250px] h-[350px]"
@@ -75,7 +76,7 @@ const BestSellerProducts = () => {
 
                 {/* PRODUCT4 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic4.jpg"
                         alt="Product 3"
                         className="w-[250px] h-[350px]"
@@ -96,7 +97,7 @@ const BestSellerProducts = () => {
 
                 {/* PRODUCT5 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic5.jpg"
                         alt="Product 3"
                         className="w-[250px] h-[350px]"
@@ -117,7 +118,7 @@ const BestSellerProducts = () => {
 
                 {/* PRODUCT6 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic6.jpg"
                         alt="Product 3"
                         className="w-[250px] h-[350px]"
@@ -138,7 +139,7 @@ const BestSellerProducts = () => {
 
                 {/* PRODUCT7 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic7.jpg"
                         alt="Product 3"
                         className="w-[250px] h-[350px]"
@@ -159,7 +160,7 @@ const BestSellerProducts = () => {
 
                 {/* PRODUCT8 */}
                 <div className="text-center">
-                    <img
+                    <Image
                         src="/bestsellerproductpic8.jpg"
                         alt="Product 3"
                         className="w-[250px] h-[350px]"

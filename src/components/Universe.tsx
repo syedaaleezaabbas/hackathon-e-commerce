@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 
 const Universe = () => {
     return (
@@ -7,7 +8,7 @@ const Universe = () => {
                 {/* Left Side: Image */}
                 <div className="w-full lg:w-1/2 flex justify-center lg:justify-start ml-32">
                     <div className="relative">
-                        <img
+                        <Image
                             src="/universe.png"
                             alt="Asian"
                             className="w-[90%] max-w-[400px] sm:max-w-[500px] lg:w-[725px] lg:h-[600px] object-cover ml-18"

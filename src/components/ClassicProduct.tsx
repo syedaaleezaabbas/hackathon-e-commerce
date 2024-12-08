@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const ClassicProduct = () => {
     return (
         <div className="bg-[#23856D] text-white pt-12 pl-44 pr-28 md:flex items-center ">
@@ -13,7 +15,7 @@ const ClassicProduct = () => {
                 </button>
             </div>
             <div className="md:w-1/2 flex justify-center">
-                <img
+                <Image
                     src="classicproduct.png"
                     alt="Model"
                     className="w-[80%] rounded-lg"
