@@ -3,14 +3,15 @@ import Image from 'next/image'
 
 const BestSellerProducts = () => {
     return (
-        <div className="bg-white p-6">
-            <h2 className="text-center text-2xl font-bold mb-2">BESTSELLER PRODUCTS</h2>
+        <div className="bg-white py-14">
+            <h5 className='text-lg text-[#252b42] text-center mb-4'>Featured Products</h5>
+            <h2 className="text-center md:text-3xl text-2xl font-bold mb-2">BESTSELLER PRODUCTS</h2>
             <p className="text-center text-gray-500 mb-6">
                 Problems trying to resolve the conflict between
             </p>
 
             {/* Products Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 px-32">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:px-32 px-16 md:space-y-0 space-y-14">
                 {/* Product 1 */}
                 <div className="text-center">
                     <Image
@@ -179,7 +180,7 @@ const BestSellerProducts = () => {
                         alt="Product 3"
                         width={250}
                         height={350}
-                        className= " [w-250px] h-[350px]"
+                        className= "md:w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
                     <p className="text-gray-500 text-sm">English Department</p>

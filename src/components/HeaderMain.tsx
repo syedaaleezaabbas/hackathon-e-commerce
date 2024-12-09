@@ -9,7 +9,7 @@ import { FaRegHeart } from "react-icons/fa";
 const HeaderMain = () => {
     return (
         <>
-            <div className='flex items-center justify-between py-6 px-8'>
+            <div className='flex items-center justify-between py-6 px-8 max-w-screen-2xl mx-auto'>
                 <h1 className='text-[28px] font-bold text-[#252b42]'>Bandage</h1>
                 <ul className='md:flex flex-col items-center text-[#737373] font-bold text-[18px] gap-x-5 mr-48'>
                     <li><Link href="/">Home</Link></li>
@@ -19,7 +19,7 @@ const HeaderMain = () => {
                     <li><Link href="/contact">Contact</Link></li>
                     <li><Link href="/pages">Pages</Link></li>
                 </ul>
-                <div className='flex items-center gap-x-2 text-blue-500 font-bold text-[18px]'>
+                <div className='flex items-center gap-x-2 text-[#23A6F0] font-bold text-[18px]'>
                     <FaRegUser /> Login / Register
                     <div className='flex items-center gap-x-6 ml-6'>
                         <p className='text-xl flex items-center'><IoSearchSharp /></p>
