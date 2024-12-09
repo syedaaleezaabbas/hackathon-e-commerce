@@ -48,7 +48,7 @@ const FeaturedPosts = () => {
                     <div key={post.id} className="bg-white shadow-md rounded-lg overflow-hidden">
                         {/* Post Image */}
                         <div className="relative">
-                            <Image src={post.Image} alt={post.title} className="w-full h-80 object-cover" />
+                            <Image src={post.Image} alt={post.title} width={200} height={200} className="w-full h-80 object-cover" />
                             <span className="absolute top-2 left-2 bg-red-500 text-white text-sm font-bold px-2 py-1 rounded">
                                 {post.tag}
                             </span>

@@ -11,6 +11,8 @@ const Universe = () => {
                         <Image
                             src="/universe.png"
                             alt="Asian"
+                            width={200}
+                            height={200}
                             className="w-[90%] max-w-[400px] sm:max-w-[500px] lg:w-[725px] lg:h-[600px] object-cover ml-18"
                         />
                     </div>

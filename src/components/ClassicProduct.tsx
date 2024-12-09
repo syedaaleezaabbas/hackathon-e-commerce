@@ -16,8 +16,10 @@ const ClassicProduct = () => {
             </div>
             <div className="md:w-1/2 flex justify-center">
                 <Image
-                    src="classicproduct.png"
+                    src="/classicproduct.png"
                     alt="Model"
+                    width={200}
+                    height={200}
                     className="w-[80%] rounded-lg"
                 />
             </div>

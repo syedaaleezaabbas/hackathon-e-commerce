@@ -16,6 +16,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic1.jpg"
                         alt="Product 1"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
@@ -37,6 +39,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic2.jpg"
                         alt="Product 2"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
@@ -58,6 +62,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic3.jpg"
                         alt="Product 3"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
@@ -79,6 +85,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic4.jpg"
                         alt="Product 3"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
@@ -100,6 +108,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic5.jpg"
                         alt="Product 3"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
@@ -121,6 +131,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic6.jpg"
                         alt="Product 3"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
@@ -142,6 +154,8 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic7.jpg"
                         alt="Product 3"
+                        width={250}
+                        height={350}
                         className="w-[250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Desi0gn</h3>
@@ -163,7 +177,9 @@ const BestSellerProducts = () => {
                     <Image
                         src="/bestsellerproductpic8.jpg"
                         alt="Product 3"
-                        className="w-[250px] h-[350px]"
+                        width={250}
+                        height={350}
+                        className= " [w-250px] h-[350px]"
                     />
                     <h3 className="mt-3 text-lg font-medium">Graphic Design</h3>
                     <p className="text-gray-500 text-sm">English Department</p>
