@@ -1,10 +1,18 @@
 import React from "react";
 import Image from 'next/image'
+import { LuAlarmClock } from "react-icons/lu";
+import { FaComment } from "react-icons/fa";
+import { PiGreaterThanLight } from "react-icons/pi";
 
 const FeaturedPosts = () => {
     const posts = [
         {
             id: 1,
+            googleTrending: {
+                google: "Google",
+                trending: "Trending",
+                news: "News",
+            },
             title: "Loudest à la Madison #1 (L'Integrál)",
             description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
             Image: "/featuredpostpic2.png",
@@ -14,6 +22,11 @@ const FeaturedPosts = () => {
         },
         {
             id: 2,
+            googleTrending: {
+                google: "Google",
+                trending: "Trending",
+                news: "News",
+            },
             title: "Loudest à la Madison #1 (L'Integrál)",
             description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
             Image: "/featuredpostpic3.png",
@@ -23,6 +36,11 @@ const FeaturedPosts = () => {
         },
         {
             id: 3,
+            googleTrending: {
+                google: "Google",
+                trending: "Trending",
+                news: "News",
+            },
             title: "Loudest à la Madison #1 (L'Integrál)",
             description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
             Image: "/featuredpostpic1.png",
@@ -37,7 +55,7 @@ const FeaturedPosts = () => {
             {/* Section Header */}
             <div className="text-center mb-8">
                 <h2 className="text-[28px] font-bold text-gray-800">Featured Posts</h2>
-                <p className="text-gray-500">
+                <p className="text-gray-500 md:px-0 px-4">
                     Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics
                 </p>
             </div>
@@ -56,17 +74,25 @@ const FeaturedPosts = () => {
 
                         {/* Post Content */}
                         <div className="p-5">
+                            <p className="text-sm mb-2">
+                                <span className="text-blue-500">{post.googleTrending.google}</span>
+                                <span className="text-gray-500 ml-3">{post.googleTrending.trending}</span>
+                                <span className="text-gray-500 ml-3">{post.googleTrending.google}</span>
+                            </p>
                             <h3 className="text-lg font-semibold text-gray-800">{post.title}</h3>
                             <p className="text-gray-600 text-md mt-2">{post.description}</p>
                             <div className="flex justify-between items-center text-gray-500 text-sm mt-4">
-                                <span>{post.date}</span>
-                                <span>{post.comments} comments</span>
+                                <div className="flex items-center">
+                                    <LuAlarmClock className="mr-1 h-5 w-5 text-blue-500" /><span>{post.date}</span></div>
+                                <div className="flex items-center">
+                                    <FaComment className="mr-1 h-5 w-5 text-green-700" /><span>{post.comments} comments</span>
+                                </div>
                             </div>
                             <a
                                 href="#"
-                                className="text-blue-500 text-sm font-medium mt-4 inline-block hover:underline"
+                                className="text-gray-500 text-sm font-bold mt-4 inline-flex items-center hover:underline"
                             >
-                                Learn More →
+                                <span>Learn More</span> <PiGreaterThanLight className="h-5 w-5 ml-1 text-blue-500" />
                             </a>
                         </div>
                     </div>

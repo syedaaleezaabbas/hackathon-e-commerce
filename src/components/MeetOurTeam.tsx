@@ -9,7 +9,7 @@ const MeetOurTeam = () => {
             id: 1,
             name: 'Username',
             profession: 'Profession',
-            image: '/team1.png',
+            Image: '/team1.png',
             socialLinks: {
                 facebook: '#',
                 instagram: '#',
@@ -20,7 +20,7 @@ const MeetOurTeam = () => {
             id: 2,
             name: 'Username',
             profession: 'Profession',
-            image: '/team2.jpg',
+            Image: '/team2.jpg',
             socialLinks: {
                 facebook: '#',
                 instagram: '#',
@@ -31,7 +31,7 @@ const MeetOurTeam = () => {
             id: 3,
             name: 'UserName',
             profession: 'Profession',
-            image: '/team3.png',
+            Image: '/team3.png',
             socialLinks: {
                 facebook: '#',
                 instagram: '#',
@@ -48,7 +48,7 @@ const MeetOurTeam = () => {
             <div className="md:flex justify-between">
                 {teamMembers.map(member => (
                     <div key={member.id} className="bg-white shadow-lg rounded-lg overflow-hidden md:mx-4 mx-6 md:w-1/3 md:mb-0 mb-8">
-                        <img src={member.image} alt={member.name} className="w-full h-64 object-cover" />
+                        <img src={member.Image} alt={member.name} className="w-full h-64 object-cover" />
 
 
                         <div className="p-4 text-center">

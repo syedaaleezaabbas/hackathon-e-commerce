@@ -9,13 +9,22 @@ import { FaTwitter } from "react-icons/fa";
 const HeaderTop = () => {
     return (
         <div>
-            <div className="bg-blue-950 text-white py-4 px-8 md:flex md:text-left justify-between items-center max-w-screen-2xl mx-auto'">
-                <div className="md:flex items-center md:gap-x-4">
-                    <p className='md:text-[18px] text-[16px] flex items-center gap-x-1 md:mb-0 mb-3'><LuPhone className='text-lg' />(225) 1 555-0118</p>
-                    <p className='md:text-[18px] text-[16px] flex items-center gap-x-1 md:mb-0 mb-3'><TfiEmail className='text-lg' />micelle.rizvera@example.com</p>
+            <div className="bg-blue-950 text-white py-4 px-8 md:flex hidden text-left justify-between items-center max-w-screen-2xl mx-auto'">
+                <div className="flex items-center gap-x-4">
+                    <p className='text-[16px] flex items-center gap-x-1'><LuPhone className='text-lg' />(225) 1 555-0118</p>
+                    <p className='text-[16px] flex items-center gap-x-1'><TfiEmail className='text-lg' />micelle.rizvera@example.com</p>
                 </div>
-                <div className="md:text-[18px] text-[16px] md:mb-0 mb-3">Follow us and get a chance to win 80% off</div>
-                <div className="md:text-[18px] text-[16px] flex items-center gap-x-3 md:mb-0 mb-3">Follow Us : <FaInstagram /><FaYoutube /><FaFacebook /><FaTwitter /></div>
+                <div className="text-[16px]">Follow us and get a chance to win 80% off</div>
+                <div className="text-[16px] flex items-center gap-x-3">Follow Us :
+                    <a href="#" className="text-white">
+                        <FaInstagram /></a>
+                    <a href="#" className="text-white">
+                        <FaYoutube /></a>
+                    <a href="#" className="text-white">
+                        <FaFacebook /></a>
+                    <a href="#" className="text-white">
+                        <FaTwitter /></a>
+                </div>
             </div>
         </div>
     )

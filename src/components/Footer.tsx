@@ -38,9 +38,10 @@ const Footer = () => {
                     <div>
                         <h3 className="font-semibold text-[#252b42]">Legal</h3>
                         <ul className="mt-4 space-y-2">
-                            <li><a href="#" className="text-[#737373] hover:text-blue-500">Privacy Policy</a></li>
-                            <li><a href="#" className="text-[#737373] hover:text-blue-500">Terms of Service</a></li>
-                            <li><a href="#" className=" text-[#737373] hover:text-blue-500">Disclaimer</a></li>
+                            <li><a href="#" className="text-[#737373] hover:text-blue-500">About Us</a></li>
+                            <li><a href="#" className="text-[#737373] hover:text-blue-500">Carrier</a></li>
+                            <li><a href="#" className=" text-[#737373] hover:text-blue-500">We are hiring</a></li>
+                            <li><a href="#" className=" text-[#737373] hover:text-blue-500">Blog</a></li>
                         </ul>
                     </div>
 
@@ -75,11 +76,11 @@ const Footer = () => {
                                 <input
                                     type="email"
                                     placeholder="Your Email"
-                                    className="px-4 py-2 w-full border border-gray-300 rounded-l-md focus:outline-none focus:ring-1 focus:ring-gray-500"
+                                    className="px-6 py-2 w-full border border-gray-600 rounded-l-md focus:outline-none"
                                 />
                                 <button
                                     type="submit"
-                                    className="bg-blue-500 text-white px-4 py-2 rounded-r-md hover:bg-blue-600"
+                                    className="bg-blue-500 text-white px-2 py-2 rounded-r-md hover:bg-blue-600"
                                 >
                                     Subscribe
                                 </button>
@@ -93,7 +94,7 @@ const Footer = () => {
             </div>
 
             {/* Bottom Section */}
-            <div className="text-start py-4 px-6 bg-gray-200 text-[#737373] font-medium border-t text-lg">
+            <div className="text-start py-4 px-6 bg-gray-200 text-[#737373] font-medium border-t md:text-lg">
                 Made With Love By Finland. All Rights Reserved.
             </div>
         </footer>

@@ -1,16 +1,17 @@
 import React from 'react'
-import Link from 'next/link'
+import Link from 'next/link';
 import Image from 'next/image'
 import { FaLongArrowAltRight } from "react-icons/fa";
 import MeetOurTeam from '@/components/MeetOurTeam';
 import Footer from '@/components/Footer';
+import MobileHeader from '@/components/MobileHeader';
 
 const page = () => {
     return (
         <div className='bg-white max-w-screen-2xl mx-auto'>
             {/* header */}
-            <header className='bg-white'>
-                <div className='px-20 py-4 md:flex hidden items-center justify-between'>
+            <header className='bg-white md:block hidden'>
+                <div className='px-20 py-4 flex items-center justify-between'>
                     <h1 className='font-bold text-[28px] text-[#252B42]'>Bandage</h1>
                     <nav>
                         <ul className='flex space-x-4 font-bold text-[16px] text-[#737373]'>
@@ -18,7 +19,6 @@ const page = () => {
                             <li><Link href="/product">Product</Link></li>
                             <li><Link href="/pricing">Pricing</Link></li>
                             <li><Link href="/contact">Contact</Link></li>
-
                         </ul>
                     </nav>
 
@@ -29,21 +29,24 @@ const page = () => {
                 </div>
             </header>
 
+            <MobileHeader />
+
+
 
             {/* about us */}
-            <section className="md:pl-20 pl-10
+            <section className="md:pl-20 pl-0
              px-10 pb-20 md:pt-0 pt-8 flex justify-between flex-col md:flex-row items-center bg-white">
                 <div className="md:w-1/2 mb-6 md:mb-0">
-                    <h5 className='text-[#252B42] text-lg md:text-left text-center font-bold mb-6'>About Company</h5>
-                    <h2 className="md:text-6xl text-4xl md:text-left text-center text-[#252B42] font-bold mb-6">About Us</h2>
-                    <p className="text-[#737373] mb-6 md:text-left text-center">
-                        We know how large objects will act,<br /> but things on a small scale. 
+                    <h5 className='text-[#252B42] text-lg text-left  font-bold mb-6'>About Company</h5>
+                    <h2 className="md:text-6xl text-4xl text-left  text-[#252B42] font-bold mb-6">About Us</h2>
+                    <p className="text-[#737373] mb-6 text-left">
+                        We know how large objects will act,<br /> but things on a small scale.
                     </p>
-                    <button className="bg-[#23A6F0] hover:bg-[#1d8bd1] text-white font-bold py-2 md:px-10 px-8 md:ml-0 ml-11 rounded">
+                    <button className="bg-[#23A6F0] hover:bg-[#1d8bd1] text-white font-bold py-2 md:px-10 px-8 rounded">
                         Get Quote Now
                     </button>
                 </div>
-                <div className="md:w-1/2 w-[100]">
+                <div className="md:w-1/2">
                     <Image
                         src="/about1.png"
                         alt="About Us Image"
@@ -52,6 +55,7 @@ const page = () => {
                     />
                 </div>
             </section>
+
 
 
             {/* problems trying code */}
@@ -68,6 +72,7 @@ const page = () => {
                     <p className='text-lg text-[#737373]'>Problems trying to resolve the conflict between the two major realms of<br /> Classical physics: Newtonian mechanics</p>
                 </div>
             </div>
+
 
 
             {/* happy customers code */}
@@ -91,6 +96,7 @@ const page = () => {
             </div>
 
 
+
             {/* image */}
             <div className='md:mt-40 mt-20 md:px-0 px-5'>
                 <Image
@@ -103,8 +109,10 @@ const page = () => {
             </div>
 
 
+
             {/* meet our team code */}
             <MeetOurTeam />
+
 
 
             {/* big companies code */}
@@ -152,6 +160,7 @@ const page = () => {
             </div>
 
 
+
             {/* work with us */}
             <section className="flex flex-col md:flex-row items-center justify-between bg-[#2A7CC7] md:py-16 py-12 md:pl-40 pl-10 text-white">
                 <div className="md:w-1/2 mb-8 md:mb-0">
@@ -170,7 +179,7 @@ const page = () => {
                         alt="Model image"
                         width={500}
                         height={600}
-                        className="  object-cover"
+                        className="object-cover"
                     />
                 </div>
             </section>
@@ -180,4 +189,4 @@ const page = () => {
     )
 }
 
-export default page
+export default page;

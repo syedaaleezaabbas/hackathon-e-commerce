@@ -5,7 +5,7 @@ import Image from 'next/image';
 const products = [
     {
         id: 1,
-        image: '/bestsellerproductpic1.jpg',
+        image: '/shopping1.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -13,7 +13,7 @@ const products = [
     },
     {
         id: 2,
-        image: '/bestsellerproductpic2.jpg',
+        image: '/shopping2.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -21,7 +21,7 @@ const products = [
     },
     {
         id: 3,
-        image: '/bestsellerproductpic3.jpg',
+        image: '/shopping3.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -29,7 +29,7 @@ const products = [
     },
     {
         id: 4,
-        image: '/bestsellerproductpic4.jpg',
+        image: '/shopping4.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -37,7 +37,7 @@ const products = [
     },
     {
         id: 5,
-        image: '/bestsellerproductpic5.jpg',
+        image: '/shopping5.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -45,7 +45,7 @@ const products = [
     },
     {
         id: 6,
-        image: '/bestsellerproductpic6.jpg',
+        image: '/shopping6.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -53,7 +53,7 @@ const products = [
     },
     {
         id: 7,
-        image: '/bestsellerproductpic7.jpg',
+        image: '/shopping7.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -61,7 +61,39 @@ const products = [
     },
     {
         id: 8,
-        image: '/bestsellerproductpic8.jpg',
+        image: '/shopping8.png',
+        title: 'Graphic Design',
+        department: 'English Department',
+        oldPrice: 16.48,
+        newPrice: 6.48,
+    },
+    {
+        id: 9,
+        image: '/shopping9.png',
+        title: 'Graphic Design',
+        department: 'English Department',
+        oldPrice: 16.48,
+        newPrice: 6.48,
+    },
+    {
+        id: 10,
+        image: '/shopping10.png',
+        title: 'Graphic Design',
+        department: 'English Department',
+        oldPrice: 16.48,
+        newPrice: 6.48,
+    },
+    {
+        id: 11,
+        image: '/shopping11.png',
+        title: 'Graphic Design',
+        department: 'English Department',
+        oldPrice: 16.48,
+        newPrice: 6.48,
+    },
+    {
+        id: 12,
+        image: '/shopping12.png',
         title: 'Graphic Design',
         department: 'English Department',
         oldPrice: 16.48,
@@ -69,28 +101,19 @@ const products = [
     },
 ];
 
-const BestSellerProducts = () => {
+const ShopProducts = () => {
     return (
         <div className="bg-white py-14">
-            {/* Section Title */}
-            <h5 className="text-lg text-[#252b42] text-center mb-4">Featured Products</h5>
-            <h2 className="text-center md:text-3xl text-2xl font-bold mb-2">
-                BESTSELLER PRODUCTS
-            </h2>
-            <p className="md:px-0 px-2 text-center text-gray-500 mb-6">
-                Problems trying to resolve the conflict between
-            </p>
-
             {/* Products Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:px-32 px-16 md:space-y-0 space-y-14">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:px-28 px-16 md:space-y-0 space-y-14">
                 {products.map((product) => (
                     <div key={product.id} className="text-center">
                         <Image
                             src={product.image}
                             alt={product.title}
-                            width={250}
-                            height={350}
-                            className="w-[250px] h-[350px]"
+                            width={300}
+                            height={300}
+                            className="w-[300px] h-[300px]"
                         />
                         <h3 className="mt-3 text-lg font-medium">{product.title}</h3>
                         <p className="text-gray-500 text-sm">{product.department}</p>
@@ -115,4 +138,4 @@ const BestSellerProducts = () => {
     );
 };
 
-export default BestSellerProducts;
+export default ShopProducts;

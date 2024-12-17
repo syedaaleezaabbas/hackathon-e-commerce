@@ -4,9 +4,9 @@ import Image from 'next/image'
 const Universe = () => {
     return (
         <main>
-            <div className="w-full bg-white flex flex-col lg:flex-row justify-center items-center lg:items-start">
+            <div className="w-full bg-white flex flex-col lg:flex-row justify-center items-center lg:items-start overflow-x-hidden">
                 {/* Left Side: Image */}
-                <div className="w-full lg:w-1/2 flex justify-center lg:justify-start ml-32">
+                <div className="w-full lg:w-1/2 flex md:justify-center justify-start md:ml-32 ml-14">
                     <div className="relative">
                         <Image
                             src="/universe.png"
@@ -19,7 +19,7 @@ const Universe = () => {
                 </div>
 
                 {/* Right Side: Content */}
-                <div className="w-full lg:w-1/2 px-5 lg:px-10 mt-8 lg:mt-10 py-32">
+                <div className="w-full lg:w-1/2 px-5 lg:px-10 md:mt-8 mt-0 lg:mt-10 py-32">
                     <h5 className="text-gray-400 text-sm lg:text-base font-bold mb-6">
                         SUMMER 2020
                     </h5>
@@ -34,7 +34,7 @@ const Universe = () => {
                         <button className="bg-[#2DC071] text-white px-6 py-3 rounded-md hover:bg-green-600 transition-colors">
                             BUY NOW
                         </button>
-                        <button className=" text-[#2DC071] border-2 border-[#2DC071] px-6 py-3 rounded-md hover:bg-green-600 hover:text-white transition-colors">
+                        <button className=" text-[#2DC071] border-2 border-[#2DC071] px-6 md:py-3 py-2 rounded-md hover:bg-green-600 hover:text-white transition-colors">
                             READ MORE
                         </button>
                     </div>
