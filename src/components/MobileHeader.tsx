@@ -28,8 +28,8 @@ const MobileHeader = () => {
             </div>
             <SheetContent>
                 <ul className='flex flex-col text-center text-[#737373] font-semibold text-[18px] pt-20 space-y-4'>
-                    <li><Link href="/product">Product</Link></li>
                     <li><Link href="/">Home</Link></li>
+                    <li><Link href="/product">Product</Link></li>
                     <li><Link href="/pricing">Pricing</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
