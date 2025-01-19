@@ -25,14 +25,14 @@ const page = () => {
       <div className="flex flex-col lg:flex-row px-4 pb-20 bg-gray-100 gap-14">
         {/* Product Images */}
         <div className="flex-1">
-          <img
+          <Image
             src="/product1.jpg"
             alt="Main Product"
             className="w-full"
           />
           <div className="flex gap-4 mt-4">
-            <img src="/product2.jpg" alt="Thumbnail" className="w-25 h-30" />
-            <img src="/product3.jpg" alt="Thumbnail" className="w-25 h-30" />
+            <Image src="/product2.jpg" alt="Thumbnail" className="w-25 h-30" />
+            <Image src="/product3.jpg" alt="Thumbnail" className="w-25 h-30" />
           </div>
         </div>
 
@@ -78,7 +78,7 @@ const page = () => {
 
       {/* Tabs */}
       <div className="my-8 bg-white ">
-        <div className="flex justify-center gap-14 text-lg">
+        <div className="flex md:flex-row flex-col justify-center md:gap-14 gap-4 md:text-lg">
           <button className=" text-gray-600">Description</button>
           <button className=" text-gray-600">Additional Information</button>
           <button className=" text-gray-600">Reviews (0)</button>
@@ -87,35 +87,83 @@ const page = () => {
 
       <hr className='my-8 border-t border-gray-300' />
 
-      <div className='flex px-6 space-x-16'>
-        <div>
+
+
+      <div className="flex flex-wrap gap-8 px-12 mb-16">
+        {/* Image Section */}
+        <div className="md:flex-shrink-0">
           <Image
-          src="/product4.png"
-          alt='product picture'
-          width={350}
-          height={400}
-          className='w=full' />
-        </div>
-        <div className='flex flex-col space-y-4 max-w-sm'>
-          <h1 className='font-bold text-black text-2xl mb-9'>the quick fox jumps over</h1>
-        <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Relit official consequent door enim relit mollie. Excitation venial consequent sent nostrum set.</p>
-        <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Relit official consequent door enim relit mollie. Excitation venial consequent sent nostrum set.</p>
-          <p>Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Relit official consequent door enim relit mollie. Excitation venial consequent sent nostrum set.</p>
-        </div>
-        <div className='flex flex-col space-y-4'>
-        <h2 className='font-bold text-black text-2xl mb-9'>the quick fox jumps over</h2>
-      <p><span>➤</span>  the quick fox jumps over</p>
-        <p><span>➤</span>  the quick fox jumps over</p>
-        <p><span>➤</span>  the quick fox jumps over</p> <h2 className='font-bold text-black text-2xl mb-9'>the quick fox jumps over</h2>
-      <p><span>➤</span>  the quick fox jumps over</p>
-        <p><span>➤</span>  the quick fox jumps over</p>
-        <p><span>➤</span>  the quick fox jumps over</p>
-
+            src="/product4.png"
+            alt="Product picture"
+            width={350}
+            height={400}
+            className="w-full h-[400px]"
+          />
         </div>
 
+        {/* Text Section */}
+        <div className="flex flex-col space-y-4 max-w-md">
+          <h1 className="font-bold text-black text-2xl mb-4">
+            The quick fox jumps over
+          </h1>
+          <p className='text-lg text'>
+            Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Relit
+            official consequent door enim relit mollie. Excitation venial consequent
+            sent nostrum set.
+          </p>
+          <p className='text-lg'>
+            Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Relit
+            official consequent door enim relit mollie. Excitation venial consequent
+            sent nostrum set.
+          </p>
+          <p className='text-lg'>
+            Met minim Mollie non desert Alamo est sit cliquey dolor do met sent. Relit
+            official consequent door enim relit mollie. Excitation venial consequent
+            sent nostrum set.
+          </p>
+        </div>
+
+        {/* List Section */}
+        <div className="flex flex-col space-y-6">
+          <h2 className="font-bold text-black text-2xl">
+            The quick fox jumps over
+          </h2>
+          <ul className="space-y-2">
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+          </ul>
+          <h2 className="font-bold text-black text-2xl">
+            The quick fox jumps over
+          </h2>
+          <ul className="space-y-2">
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+            <li className="flex items-center text-lg">
+              <span className="mr-2 text-blue-500">➤</span> The quick fox jumps over the lazy dog
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   )
+
 }
 
 export default page

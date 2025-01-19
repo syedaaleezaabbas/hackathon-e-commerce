@@ -131,7 +131,6 @@ const Shop = () => {
                         id="popularity"
                         className="py-2 px-2 text-lg border border-gray-600 rounded text-gray-600"
                     >
-                        <option value="popular">Popularity</option>
                         <option value="newest">Newest</option>
                         <option value="price_low">Price: Low to High</option>
                         <option value="price_high">Price: High to Low</option>

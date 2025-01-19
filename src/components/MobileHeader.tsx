@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { FaChevronDown } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5"
 import { TbShoppingCart } from "react-icons/tb";
 import { Menu } from 'lucide-react';
@@ -29,7 +30,10 @@ const MobileHeader = () => {
             <SheetContent>
                 <ul className='flex flex-col text-center text-[#737373] font-semibold text-[18px] pt-20 space-y-4'>
                     <li><Link href="/">Home</Link></li>
-                    <li><Link href="/product">Product</Link></li>
+                    <li><Link href="/about">About</Link></li>
+                    <li><Link href="/product">Products</Link></li>
+                    <li><Link href="/shop">Shop</Link></li>
+                    <li><Link href="/pages">Pages</Link></li>
                     <li><Link href="/pricing">Pricing</Link></li>
                     <li><Link href="/contact">Contact</Link></li>
                 </ul>
