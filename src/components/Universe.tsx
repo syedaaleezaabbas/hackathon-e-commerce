@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Universe = () => {
     return (
         <main>
-            <div className="w-full bg-white flex flex-col lg:flex-row justify-center items-center lg:items-start overflow-x-hidden">
+            <div className="w-full bg-white flex flex-col lg:flex-row justify-center items-center lg:items-start overflow-x-hidden max-w-screen-2xl mx-auto">
                 {/* Left Side: Image */}
                 <div className="w-full lg:w-1/2 flex md:justify-center justify-start md:ml-32 ml-14">
                     <div className="relative">

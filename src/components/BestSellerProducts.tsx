@@ -71,7 +71,7 @@ const products = [
 
 const BestSellerProducts = () => {
     return (
-        <div className="bg-white py-14">
+        <div className="bg-white py-14 max-w-screen-2xl mx-auto">
             {/* Section Title */}
             <h5 className="text-lg text-[#252b42] text-center mb-4">Featured Products</h5>
             <h2 className="text-center md:text-3xl text-2xl font-bold mb-2">

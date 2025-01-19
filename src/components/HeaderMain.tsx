@@ -10,9 +10,9 @@ import MobileHeader from './MobileHeader';
 const HeaderMain = () => {
     return (
         <>
-            <div className='md:flex hidden items-center justify-between py-6 px-8 max-w-screen-2xl mx-auto'>
+            <div className='flex items-center justify-between py-6 px-8 space-x-2 max-w-screen-2xl mx-auto'>
                 <h1 className='text-[28px] font-bold text-[#252b42]'>Bandage</h1>
-                <ul className='flex flex-row items-center text-[#737373] font-semibold text-[18px] gap-x-5 mr-48'>
+                <ul className='flex flex-row items-center text-[#737373] font-semibold text-[18px] gap-x-5 overflow-x-hidden'>
                     <li><Link href="/">Home</Link></li>
                     <li className='flex items-center text-[#252b42] font-medium gap-x-3'><Link href="/shop">Shop</Link><FaChevronDown className='text-lg' /></li>
                     <li><Link href="/about">About</Link></li>
@@ -21,8 +21,8 @@ const HeaderMain = () => {
                     <li><Link href="/pages">Pages</Link></li>
                 </ul>
                 <div className='flex items-center gap-x-2 text-[#23A6F0] font-bold text-[18px]'>
-                    <FaRegUser /> <a href="#">Login / Register</a>
-                    <div className='flex items-center gap-x-6 ml-6'>
+                    <FaRegUser /> <a href="#">Login/Register</a>
+                    <div className='flex items-center gap-x-4 ml-2'>
                         <p className='text-xl flex items-center'><a href="#"><IoSearchSharp /></a></p>
                         <p className='text-xl flex items-center gap-x-1'><a href="#"><TbShoppingCart /></a>1</p>
                         <p className='text-xl flex items-center gap-x-1'><a href="#"><FaRegHeart /></a>1</p>

@@ -13,7 +13,7 @@ export default function ContactPage() {
     <div className='bg-white max-w-screen-2xl mx-auto'>
       {/* header */}
       <header className='bg-white md:block hidden'>
-        <div className='px-20 py-4 flex items-center justify-between'>
+        <div className='px-20 py-4 space-x-8 flex items-center justify-between'>
           <h1 className='font-bold text-[28px] text-[#252B42]'>Bandage</h1>
           <nav>
             <ul className='flex space-x-4 font-bold text-[16px] text-[#737373]'>
@@ -77,7 +77,7 @@ export default function ContactPage() {
         <section className="text-center px-8 py-16">
           <h3 className="md:text-xl text-lg text-[#252B42] font-semibold uppercase mb-4">Visit our office</h3>
           <h2 className="md:text-4xl text-3xl font-bold text-[#252B42] mb-8">
-            We help small businesses<br className="md:block hidden"/> with big ideas
+            We help small businesses<br className="md:block hidden" /> with big ideas
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
             {/* Support Cards */}
@@ -153,10 +153,9 @@ export default function ContactPage() {
             Try it free now
           </button>
         </section>
-        </div>
-
-        <Footer />
       </div>
-);
+
+      <Footer />
+    </div>
+  );
 }
-     

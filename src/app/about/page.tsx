@@ -11,7 +11,7 @@ const page = () => {
         <div className='bg-white max-w-screen-2xl mx-auto'>
             {/* header */}
             <header className='bg-white md:block hidden'>
-                <div className='px-20 py-4 flex items-center justify-between'>
+                <div className='px-20 py-4 space-x-8 flex items-center justify-between'>
                     <h1 className='font-bold text-[28px] text-[#252B42]'>Bandage</h1>
                     <nav>
                         <ul className='flex space-x-4 font-bold text-[16px] text-[#737373]'>
@@ -64,12 +64,12 @@ const page = () => {
                     Problems trying
                 </div>
                 <div className="md:flex items-center justify-between">
-                    <p className="font-bold text-xl text-[#252B42] md:mb-0 mb-4">
-                        Met minim Mollie non desert<br />
-                        Alamo est sit cliquey dolor do<br />
+                    <p className="font-bold text-xl max-w-sm text-[#252B42] md:mb-0 mb-4">
+                        Met minim Mollie non desert
+                        Alamo est sit cliquey dolor do
                         met sent.
                     </p>
-                    <p className='text-lg text-[#737373]'>Problems trying to resolve the conflict between the two major realms of<br /> Classical physics: Newtonian mechanics</p>
+                    <p className='text-lg mx-w-sm text-[#737373] md:ml-10'>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
                 </div>
             </div>
 
@@ -116,10 +116,8 @@ const page = () => {
 
 
             {/* big companies code */}
-            <div className='bg-gray-200 py-20 md:px-40 px-5'>
-                <h2 className="md:text-4xl text-3xl text-[#252B42] font-bold text-center mb-6">Best Companies are Here</h2>
-                <p className='text-lg text-[#737373] md:px-60 px-0 text-center mb-12'>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
-                <div className='flex md:flex-row flex-col items-center md:gap-x-20 gap-x-0 gap-y-14 md:px-0 px-28'>
+            <div className="mb-12">
+                <div className='flex flex-wrap justify-center items-center gap-20 md:px-0 px-6'>
                     <Image
                         src={'/logo1.png'}
                         alt='vector1'

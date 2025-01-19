@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <footer className="bg-white">
+        <footer className="bg-white max-w-screen-2xl mx-auto">
             {/* Top Section */}
             <div className="flex justify-between items-center px-8 py-10 bg-gray-200">
                 <h2 className="text-2xl font-bold text-[#252b42]">Bandage</h2>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function EditorsPicks() {
     return (
-        <div className="flex justify-center py-[10px] top-[850px] bg-gray-100">
+        <div className="flex justify-center py-[10px] top-[850px] bg-gray-100 max-w-screen-2xl mx-auto">
             <div className="w-[1050px] flex flex-col gap-[30px] bg-gray-100 p-[40px]">
                 {/* Title Section */}
                 <div className="flex flex-col items-center gap-[10px]">

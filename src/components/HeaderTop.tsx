@@ -8,8 +8,8 @@ import { FaTwitter } from "react-icons/fa";
 
 const HeaderTop = () => {
     return (
-        <div>
-            <div className="bg-blue-950 text-white py-4 px-8 md:flex hidden text-left justify-between items-center max-w-screen-2xl mx-auto'">
+        <div className='max-w-screen-2xl mx-auto'>
+            <div className="bg-blue-950 text-white py-4 px-8 md:flex hidden space-x-8 text-left justify-between items-center">
                 <div className="flex items-center gap-x-4">
                     <p className='text-[16px] flex items-center gap-x-1'><LuPhone className='text-lg' />(225) 1 555-0118</p>
                     <p className='text-[16px] flex items-center gap-x-1'><TfiEmail className='text-lg' />micelle.rizvera@example.com</p>

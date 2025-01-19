@@ -10,10 +10,10 @@ import MobileHeader from '@/components/MobileHeader';
 
 const Pricing = () => {
   return (
-    <div className="bg-white max-w-screen-2xl">
+    <div className="bg-white max-w-screen-2xl mx-auto overflow-x-hidden">
       {/* Header */}
       <header className='bg-white md:block hidden'>
-        <div className='px-20 py-4 flex items-center justify-between'>
+        <div className='px-20 py-4 space-x-8 flex items-center justify-between'>
           <h1 className='font-bold text-[28px] text-[#252B42]'>Bandage</h1>
           <nav>
             <ul className='flex space-x-4 font-bold text-[16px] text-[#737373]'>

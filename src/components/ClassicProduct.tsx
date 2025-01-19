@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const ClassicProduct = () => {
     return (
-        <div className="bg-[#23856D] text-white pt-12 md:pl-44 pl-5 md:pr-28 pr-0 md:flex items-center">
+        <div className="bg-[#23856D] text-white pt-12 md:pl-44 pl-5 md:pr-28 pr-0 md:flex items-center max-w-screen-2xl mx-auto">
             <div className="md:w-1/2 text-left">
                 <p className="uppercase md:text-[20px] text-[14px] mb-8">Summer 2020</p>
                 <h2 className="md:text-[46px] text-[40px] font-bold">Vita Classic <br />Product</h2>

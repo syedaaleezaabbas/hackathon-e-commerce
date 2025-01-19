@@ -51,7 +51,7 @@ const FeaturedPosts = () => {
     ];
 
     return (
-        <div className="bg-white py-10 mt-28">
+        <div className="bg-white py-10 mt-28 max-w-screen-2xl mx-auto">
             {/* Section Header */}
             <div className="text-center mb-8">
                 <h2 className="text-[28px] font-bold text-gray-800">Featured Posts</h2>

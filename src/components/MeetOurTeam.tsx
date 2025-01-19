@@ -41,7 +41,6 @@ const MeetOurTeam = () => {
     ];
 
     return (
-
         <div className="max-w-6xl mx-auto py-10">
             <h2 className="md:text-4xl text-3xl font-bold text-center mb-4">Meet Our Team</h2>
             <p className='text-lg text-gray-600 md:px-60 px-4 text-center mb-12'>Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>

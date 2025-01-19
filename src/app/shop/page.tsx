@@ -10,7 +10,7 @@ import ShopProducts from "@/components/ShopProducts";
 
 const Shop = () => {
     return (
-        <div className="bg-white max-w-screen-2xl">
+        <div className="bg-white max-w-screen-2xl mx-auto">
             {/* Header */}
             <HeaderTop />
             <HeaderMain />
