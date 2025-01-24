@@ -4,6 +4,8 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaHeart, FaShoppingCart, FaEye } from 'react-icons/fa';
+import BestSellerProductsProductPage from '@/components/BestSellerProductsProductPage';
+import Footer from '@/components/Footer';
 
 const page = () => {
   return (
@@ -28,11 +30,13 @@ const page = () => {
           <Image
             src="/product1.jpg"
             alt="Main Product"
+            width={200}
+            height={200}
             className="w-full"
           />
           <div className="flex gap-4 mt-4">
-            <Image src="/product2.jpg" alt="Thumbnail" className="w-25 h-30" />
-            <Image src="/product3.jpg" alt="Thumbnail" className="w-25 h-30" />
+            <Image src="/product2.jpg" alt="Thumbnail" className="w-25 h-30" width={200} height={200} />
+            <Image src="/product3.jpg" alt="Thumbnail" className="w-25 h-30" width={200} height={200} />
           </div>
         </div>
 
@@ -161,7 +165,56 @@ const page = () => {
           </ul>
         </div>
       </div>
+
+
+
+      {/* BestSeller Products */}
+      <BestSellerProductsProductPage />
+
+
+
+      <div className='flex flex-wrap justify-center items-center md:gap-32 gap-16 py-7 md:px-0 px-6 bg-gray-100'>
+        <Image
+          src={'/logo1.png'}
+          alt='vector1'
+          height={200}
+          width={100}
+        />
+        <Image
+          src={'/logo2.png'}
+          alt='Lyft logo'
+          height={200}
+          width={100}
+        />
+        <Image
+          src={'/logo3.png'}
+          alt='vector 3'
+          height={200}
+          width={100}
+        />
+        <Image
+          src={'/logo4.png'}
+          alt='vector 4'
+          height={200}
+          width={100}
+        />
+        <Image
+          src={'/logo5.png'}
+          alt='vector5'
+          height={200}
+          width={100}
+        />
+        <Image
+          src={'/logo6.png'}
+          alt='vector6'
+          height={200}
+          width={100}
+        />
+      </div>
+      <Footer />
     </div>
+
+
   )
 
 }

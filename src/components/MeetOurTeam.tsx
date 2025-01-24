@@ -48,7 +48,7 @@ const MeetOurTeam = () => {
             <div className="md:flex justify-between">
                 {teamMembers.map(member => (
                     <div key={member.id} className="bg-white shadow-lg rounded-lg overflow-hidden md:mx-4 mx-6 md:w-1/3 md:mb-0 mb-8">
-                        <Image src={member.Image} alt={member.name} className="w-full h-64 object-cover" />
+                        <Image src={member.Image} alt={member.name} className="w-full h-64 object-cover" width={200} height={200} />
 
 
                         <div className="p-4 text-center">
