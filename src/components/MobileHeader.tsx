@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import { FaChevronDown } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5"
 import { TbShoppingCart } from "react-icons/tb";
 import { Menu } from 'lucide-react';

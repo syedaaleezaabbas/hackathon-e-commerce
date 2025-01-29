@@ -2,9 +2,6 @@ import Link from "next/link"
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { LuPhone } from "react-icons/lu";
-import { CiLocationOn } from "react-icons/ci";
-import { TfiEmail } from "react-icons/tfi";
 import Footer from "@/components/Footer";
 import MobileHeader from "@/components/MobileHeader";
 
